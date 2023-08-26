@@ -52,14 +52,30 @@
         0% {
             background-color: red;
         }
+
         50% {
             background-color: blue;
         }
+
         100% {
             background-color: green;
         }
     }
 
+    @media only screen and (max-width: 900px) {
+        .container {
+            background-color: red;
+        }
+        .column {
+            flex-direction: column;
+        }
+
+        .column img {
+            width: 80%;
+            margin: auto;
+            object-fit: contain;
+        }
+    }
 </style>
 
 <head>
